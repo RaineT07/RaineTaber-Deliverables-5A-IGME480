@@ -1,0 +1,15 @@
+{
+    "name": "distractible browser",
+    "version":"1.0.0",
+    "description": "browser extention made to distract you from your browsing and eat up time. There's something to be said about how this simulates adhd, however I have not done research on adhd so I cannot make any claims on how an add-on like this relates to the ADHD experience.",
+    "manifest_version":3,
+    "author":"Raine Taber",
+    "content_scripts":[
+        {
+            "js":["./script.js"],
+            "css":["./project-css.css"],
+            "run_at":"document_idle",
+            "matches":["https://*/*"]
+        }
+    ]
+}
